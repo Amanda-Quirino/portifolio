@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
+    <!--Pondo o favicon da pagina-->
     <link rel="icon" href="imagens/favicon.png" type="image/gif" sizes="16x16">
+    <!--Dizendo qual o arquivo ira estilizar a pagina-->
     <link rel="stylesheet" href="estilo.css">
+    <!--Pegando uma fonte externa (do google nesse caso) para usar-->
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Zen+Antique+Soft#standard-styles">
     
 </head>
 <body>
     <!--APRESENTACAO E INFORMACOES BASICAS-->
+    <!--Pondo um id para poder modificar a aparencia com css depois-->
     <div id="centro">
         <h1>Oi, eu sou Amanda</h1>
         <p>
+            <!--Pondo a imagem de perfil-->
             <img src="imagens/perfil.jpeg" alt="foto de perfil" width="300" height="300"></p>
         <h2>INFORMAÇÕES BÁSICAS:<br></h2>
         <p>
@@ -22,14 +27,17 @@
             Email: aqrs@cin.ufpe.br<br></a>
             Profissão: Estudante<br>
             Idade: 20 anos<br>
+            <!--Pondo um link para o site da UFPE-->
             Universidade: <a href="https://www.ufpe.br/">UFPE</a>
         </p>
     </div>
     <hr>
+    <!--Id para poder fazer a configuracao para ir ao topo da pagina clicando na seta-->
     <div id="topo">
         <a href="#centro">
             <img src="imagens/seta.png" alt="Voltar ao topo"><br>  
         </a>
+        <!--Explicando ao usuario o objetivo da seta-->
         <strong>VOLTAR AO TOPO</strong>
     </div>
     <hr>
@@ -37,6 +45,7 @@
     
 
     <!--Dizendo se eu tenho algum diploma-->
+    <!--Pondo uma classe para poder modificar com css depois-->
     <p class="esquerda">
         Diplomas:
         <!--Criando botao para mostrar as informacoes-->
@@ -45,6 +54,7 @@
         </button>
     </p>
 
+    <!--Pondo uma classe e um id para poder modificar com css depois-->
     <p class="direita" id="diplomas">
         - Nenhum, atualmente no processo de conseguir um diploma em Ciências da Computação<br>
         <!--Criando botao para esconder as informacoes-->
@@ -54,6 +64,7 @@
     </p>
 
     <!--Dizendo as linguagens de programacao que eu conheco-->
+    <!--Classe para o css depois-->
     <p class="esquerda">
         Linguagens de programação aprendidas:
         <!--Criando botao para mostrar as informacoes-->
@@ -62,6 +73,7 @@
         </button>
     </p>
 
+    <!--Classe e id para o css depois-->
     <p class="direita" id="linguagens">
         -C<br>
         -Aprendizado de Python em progresso<br>
@@ -72,6 +84,7 @@
     </p>
 
     <!--Dizendo os meus interesses-->
+    <!--Classe para o css depois-->
     <p class="esquerda">
         Interesses:
         <!--Criando botao para mostrar as informacoes-->
@@ -80,6 +93,7 @@
         </button>
     </p>
 
+    <!--Classe e id para o css depois-->
     <p class="direita" id="interesses">
         -Plantas<br>
         -Minha gata<br>
@@ -91,10 +105,12 @@
         </button>
     </p>
 
+    <!--Classe para o css depois-->
     <!--Dizendo algumas curiosidades sobre mim-->
     <p class="esquerda">
         Curiosidades:<br>
     </p>
+    <!--Classe para o css depois-->
     <p class = "esquerda">
         - Curiosidade 1
         <!--Criando botao para mostrar as informacoes-->
@@ -103,8 +119,10 @@
         </button>
     </p>
 
+    <!--Classe e id para o css depois-->
     <p class="direita" id="curiosidade1">
         - Tenho uma gata (Mimi) que só dorme e faz cara feia, uma fofa<br>
+        <!--Pondo uma foto-->
         <img src="imagens/Mimi.jpeg" alt="Foto de Mimi" width="200" height="400"><br>
         <!--Criando botao para esconder as informacoes-->
         <button type="button" onclick="document.getElementById('curiosidade1').style.display='none'">
@@ -112,31 +130,39 @@
         </button>
     </p>
 
+    <!--Classe para o css depois-->
     <p class="esquerda">
-        - Curiosidade 2<!--Criando botao para mostrar as informacoes-->
+        - Curiosidade 2
+        <!--Criando botao para mostrar as informacoes-->
         <button type="button" onclick="document.getElementById('curiosidade2').style.display='block'">
             Clique aqui para ver!
         </button>
     </p>
 
+    <!--Classe e id para o css depois-->
     <p class="direita" id="curiosidade2">
         <br>-Tenho tres plantas, uma orquidea dendrobium nobile (que foi mais dificil do que eu previa descobrir o nome)<br>
+        <!--Pondo outra foto-->
         <img src="imagens/orquidea.jpeg" alt="foto da orquidea" width="300" height="300"><br>
         <!--Criando botao para esconder as informacoes-->
         <button type="button" onclick="document.getElementById('curiosidade2').style.display='none'">
             Clique aqui para esconder!
         </button>
     </p>
-    
+
+    <!--Classe para o css depois-->
     <p class="esquerda">
-        - Curiosidade 3<!--Criando botao para mostrar as informacoes-->
+        - Curiosidade 3
+        <!--Criando botao para mostrar as informacoes-->
         <button type="button" onclick="document.getElementById('curiosidade3').style.display='block'"
         >Clique aqui para ver!
     </button>
     </p>
 
+    <!--Classe e id para o css depois-->
     <p class="direita" id="curiosidade3">
         <br>- Uma mini palmeira chameadora ( Uma fofa também)<br>
+        <!--Pondo uma terceira foto-->
         <img src="imagens/minipalmeira.jpeg" alt="foto da mini palmeira" width="300" height="300"><br>
         <!--Criando botao para esconder as informacoes-->
         <button type="button" onclick="document.getElementById('curiosidade3').style.display='none'">
@@ -144,15 +170,19 @@
         </button>
     </p>
 
+    <!--Classe para o css depois-->
     <p class="esquerda">
-        - Curiosidade 4<!--Criando botao para mostrar as informacoes-->
+        - Curiosidade 4
+        <!--Criando botao para mostrar as informacoes-->
         <button type="button" onclick="document.getElementById('curiosidade4').style.display='block'">
             Clique aqui para ver!
         </button>
     </p>
 
+    <!--Classe e id para o css depois-->
     <p class="direita" id="curiosidade4">
         <br>- E essa planta que eu não lembro nome<br>
+        <!--A vida eh feita de fotos, portanto botamos outra foto-->
         <img src="imagens/aquela_planta.jpeg" alt="foto da planta sem nome" width="200" height="300"><br>
         <!--Criando botao para esconder as informacoes-->
         <button type="button" onclick="document.getElementById('curiosidade4').style.display='none'">
@@ -160,15 +190,19 @@
         </button>
     </p>
     
+    <!--Classe para o css depois-->
     <p class="esquerda">
-        - Curiosidade 5<!--Criando botao para mostrar as informacoes-->
+        - Curiosidade 5
+        <!--Criando botao para mostrar as informacoes-->
         <button type="button" onclick="document.getElementById('curiosidade5').style.display='block'">
             Clique aqui para ver!
         </button>
     </p>
 
+    <!--Classe e idpara o css depois-->
     <p class="direita" id="curiosidade5">
         <br>-Ensinei Mimi a dar a pata em troca de folha<br>
+        <!--Dessa vez botamos um gif, e nao uma foto-->
         <img src="imagens/dandopata.gif" alt="video de mimi dando a pata"><br>
         <!--Criando botao para esconder as informacoes-->
         <button type="button" onclick="document.getElementById('curiosidade5').style.display='none'">

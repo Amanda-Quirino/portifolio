@@ -1,88 +1,105 @@
+/*Estabelecendo o comportamento de toda a pagina*/
 html {
+    /*Dizendo para a pagina que ao usar uma bookmark link eh para deslizar para o canto marcado e nao pular de uma vez*/
     scroll-behavior: smooth;
 }
 
+/*Estabelecendo a aparencia do body da pagina*/
 body {
     opacity: 1;
     font-family:Zen Antique Soft;
+    /*Dizendo que deve haver uma animacao chamada fundo de 20 segundos em loop*/
     animation: fundo 20s; 
     animation-iteration-count: infinite;
 }
 
-/* Modificando a aparencia padrao do background e da cor das letras */
+/*Estabelecendo o comportamento da seta que contera o link bookmark*/
 #topo {
+    /*Dizendo que o texto deve estar no centro*/
     text-align: center;
-    position: -webkit-sticky;
+    /*Dizendo que a posicao eh fixa na pagina, ou seja, a seta vai aparecer nao imponta em qual parte da pag o usuario esta*/
     position:fixed;
+    /*Dizendo que a seta vai ficar no topo e na direita*/
     top:0;
     right: 0;
+    /*Dizendo que ao passar o mouse em cima da seta eh possivel clicar nela*/
     cursor: pointer;
+    /*Fazendo com que a seta e o texto se adequem ao tamanho da pagina*/
     max-width: 100%;
     height: auto;
+    /*A seta fica 0+20px da direita e do topo*/
     padding: 20px;
 }
 
+/*Estabelecendo a aparencia dos retangulos do id centro e das classes direita e esquerda*/
 #centro,.direita,.esquerda {
     border: 2px solid black;
     border-radius: 8px;
     padding: 10px;
 }
 
+/*Estabelecendo a aparencia em comum das classes esquerda e direita*/
 .esquerda,.direita {
     background-color: whitesmoke;
     margin: 10px;
 }
 
+/*Estabelecendo a aparencia da classe direita*/
 .direita {
     display: none;
 }
 
+/*Estabelecendo a aparencia do id centro*/
 #centro {
+    /*Animacao chamada centroback de 20 segundos em loop*/
     animation: centroback 20s;
     animation-iteration-count: infinite;
     text-align: center;
     background-color: whitesmoke;
 }
 
+/*Criando a animacao centroback*/
 @keyframes centroback {
+    /*Entre 0% a 50% do tempo da animacao havera a troca entre 2 imagems*/
     0% {background-image: url("imagens/background_direita.jpeg");}
     50% {background-image: url("imagens/background_esquerda.jpeg");}
+    /*Entre 50% e 100% a imagem que tava no inicio ira voltar gradualmente*/
     100% {background-image: url("imagens/background_direita.jpeg");}
 }
 
+/*Criando a animacao fundo*/
 @keyframes fundo {
+    /*Mesma coisa que o centroback, so com cores em vez de imagem*/
     0% {background-color:#c1edf1;}
     50% {background-color:rgb(220, 130, 238);}
     100% {background-color:#c1edf1;}
 }
 
-/* Modificando a aparencia padrao das imagens */
+/*Modificando a aparencia padrao das imagens para se ajustarem ao tamanho da tela*/
 img {
     max-width: 100%;
     height: auto;
 }
 
-.esquerda,.direita img {
-    cursor: pointer;
-    transition: 0.3s;
-}
-
+/*Modificando a aparencia da imagem dentro do id centro para ser arredondada*/
 #centro img {
     border: 5px solid #555;
     border-radius: 50%;
 }
 
+/*Pondo uma imagem no background da classe direita e ajeitando a posicao do texto*/
 .direita {
     text-align: right;
     background-image: url("imagens/background_direita.jpeg");
 }
 
+/*Pondo uma imagem no background da classe esquerda e ajeitando a posicao do texto*/
 .esquerda {
     text-align: left;
     background-image: url("imagens/background_esquerda.jpeg");
 }
 
-/* Modificando a aparencia dos links */
+/* Modificando a aparencia dos links nao clicados*/
 a:link {
     color: palevioletred;
 }
