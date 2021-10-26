@@ -1,0 +1,88 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    opacity: 1;
+    font-family:Zen Antique Soft;
+    animation: fundo 20s; 
+    animation-iteration-count: infinite;
+}
+
+/* Modificando a aparencia padrao do background e da cor das letras */
+#topo {
+    text-align: center;
+    position: -webkit-sticky;
+    position:fixed;
+    top:0;
+    right: 0;
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+#centro,.direita,.esquerda {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.esquerda,.direita {
+    background-color: whitesmoke;
+    margin: 10px;
+}
+
+.direita {
+    display: none;
+}
+
+#centro {
+    animation: centroback 20s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+@keyframes centroback {
+    0% {background-image: url("imagens/background_direita.jpeg");}
+    50% {background-image: url("imagens/background_esquerda.jpeg");}
+    100% {background-image: url("imagens/background_direita.jpeg");}
+}
+
+@keyframes fundo {
+    0% {background-color:#c1edf1;}
+    50% {background-color:rgb(220, 130, 238);}
+    100% {background-color:#c1edf1;}
+}
+
+/* Modificando a aparencia padrao das imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.esquerda,.direita img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#centro img {
+    border: 5px solid #555;
+    border-radius: 50%;
+}
+
+.direita {
+    text-align: right;
+    background-image: url("imagens/background_direita.jpeg");
+}
+
+.esquerda {
+    text-align: left;
+    background-image: url("imagens/background_esquerda.jpeg");
+}
+
+/* Modificando a aparencia dos links */
+a:link {
+    color: palevioletred;
+}

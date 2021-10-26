@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="icon" href="imagens/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Zen+Antique+Soft#standard-styles">
+    
+</head>
+<body>
+    <!--APRESENTACAO E INFORMACOES BASICAS-->
+    <div id="centro">
+        <h1>Oi, eu sou Amanda</h1>
+        <p>
+            <img src="imagens/perfil.jpeg" alt="foto de perfil" width="300" height="300"></p>
+        <h2>INFORMAÇÕES BÁSICAS:<br></h2>
+        <p>
+            Nome: Amanda Quirino Rodrigues Dos Santos<br>
+            Email: aqrs@cin.ufpe.br<br></a>
+            Profissão: Estudante<br>
+            Idade: 20 anos<br>
+            Universidade: <a href="https://www.ufpe.br/">UFPE</a>
+        </p>
+    </div>
+    <hr>
+    <div id="topo">
+        <a href="#centro">
+            <img src="imagens/seta.png" alt="Voltar ao topo"><br>  
+        </a>
+        <strong>VOLTAR AO TOPO</strong>
+    </div>
+    <hr>
+
+    
+
+    <!--Dizendo se eu tenho algum diploma-->
+    <p class="esquerda">
+        Diplomas:
+        <!--Criando botao para mostrar as informacoes-->
+        <button type="button" onclick="document.getElementById('diplomas').style.display='block'">
+            Clique aqui para ver!
+        </button>
+    </p>
+
+    <p class="direita" id="diplomas">
+        - Nenhum, atualmente no processo de conseguir um diploma em Ciências da Computação<br>
+        <!--Criando botao para esconder as informacoes-->
+        <button type="button" onclick="document.getElementById('diplomas').style.display='none'">
+            Clique aqui para esconder!
+        </button>
+    </p>
+
+    <!--Dizendo as linguagens de programacao que eu conheco-->
+    <p class="esquerda">
+        Linguagens de programação aprendidas:
+        <!--Criando botao para mostrar as informacoes-->
+        <button type="button" onclick="document.getElementById('linguagens').style.display='block'">
+            Clique aqui para ver!
+        </button>
+    </p>
+
+    <p class="direita" id="linguagens">
+        -C<br>
+        -Aprendizado de Python em progresso<br>
+        <!--Criando botao para esconder as informacoes-->
+        <button type="button" onclick="document.getElementById('linguagens').style.display='none'">
+            Clique aqui para esconder!
+        </button>
+    </p>
+
+    <!--Dizendo os meus interesses-->
+    <p class="esquerda">
+        Interesses:
+        <!--Criando botao para mostrar as informacoes-->
+        <button type="button" onclick="document.getElementById('interesses').style.display='block'">
+            Clique aqui para ver!
+        </button>
+    </p>
+
+    <p class="direita" id="interesses">
+        -Plantas<br>
+        -Minha gata<br>
+        -Programar<br>
+        -Xingar o programa que fiz<br>
+        <!--Criando botao para esconder as informacoes-->
+        <button type="button" onclick="document.getElementById('interesses').style.display='none'">
+            Clique aqui para esconder!
+        </button>
+    </p>
+
+    <!--Dizendo algumas curiosidades sobre mim-->
+    <p class="esquerda">
+        Curiosidades:<br>
+    </p>
+    <p class = "esquerda">
+        - Curiosidade 1
+        <!--Criando botao para mostrar as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade1').style.display='block'">
+            Clique aqui para ver!
+        </button>
+    </p>
+
+    <p class="direita" id="curiosidade1">
+        - Tenho uma gata (Mimi) que só dorme e faz cara feia, uma fofa<br>
+        <img src="imagens/Mimi.jpeg" alt="Foto de Mimi" width="200" height="400"><br>
+        <!--Criando botao para esconder as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade1').style.display='none'">
+            Clique aqui para esconder!
+        </button>
+    </p>
+
+    <p class="esquerda">
+        - Curiosidade 2<!--Criando botao para mostrar as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade2').style.display='block'">
+            Clique aqui para ver!
+        </button>
+    </p>
+
+    <p class="direita" id="curiosidade2">
+        <br>-Tenho tres plantas, uma orquidea dendrobium nobile (que foi mais dificil do que eu previa descobrir o nome)<br>
+        <img src="imagens/orquidea.jpeg" alt="foto da orquidea" width="300" height="300"><br>
+        <!--Criando botao para esconder as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade2').style.display='none'">
+            Clique aqui para esconder!
+        </button>
+    </p>
+    
+    <p class="esquerda">
+        - Curiosidade 3<!--Criando botao para mostrar as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade3').style.display='block'"
+        >Clique aqui para ver!
+    </button>
+    </p>
+
+    <p class="direita" id="curiosidade3">
+        <br>- Uma mini palmeira chameadora ( Uma fofa também)<br>
+        <img src="imagens/minipalmeira.jpeg" alt="foto da mini palmeira" width="300" height="300"><br>
+        <!--Criando botao para esconder as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade3').style.display='none'">
+            Clique aqui para esconder!
+        </button>
+    </p>
+
+    <p class="esquerda">
+        - Curiosidade 4<!--Criando botao para mostrar as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade4').style.display='block'">
+            Clique aqui para ver!
+        </button>
+    </p>
+
+    <p class="direita" id="curiosidade4">
+        <br>- E essa planta que eu não lembro nome<br>
+        <img src="imagens/aquela_planta.jpeg" alt="foto da planta sem nome" width="200" height="300"><br>
+        <!--Criando botao para esconder as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade4').style.display='none'">
+            Clique aqui para esconder!
+        </button>
+    </p>
+    
+    <p class="esquerda">
+        - Curiosidade 5<!--Criando botao para mostrar as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade5').style.display='block'">
+            Clique aqui para ver!
+        </button>
+    </p>
+
+    <p class="direita" id="curiosidade5">
+        <br>-Ensinei Mimi a dar a pata em troca de folha<br>
+        <img src="imagens/dandopata.gif" alt="video de mimi dando a pata"><br>
+        <!--Criando botao para esconder as informacoes-->
+        <button type="button" onclick="document.getElementById('curiosidade5').style.display='none'">
+            Clique aqui para esconder!
+        </button>
+    </p>
+</body>
+</html>
