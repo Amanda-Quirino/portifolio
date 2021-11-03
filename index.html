@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="estilo.css">
     <!--Pegando uma fonte externa (do google nesse caso) para usar-->
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Zen+Antique+Soft#standard-styles">
-    
+    <!--Dizendo qual o arquivo script da pagina-->
+    <script src="./scripts.js"></script>
 </head>
 <body>
     <!--APRESENTACAO E INFORMACOES BASICAS-->
@@ -20,7 +21,8 @@
         <h1>Oi, eu sou Amanda</h1>
         <p>
             <!--Pondo a imagem de perfil-->
-            <img src="imagens/perfil.jpeg" alt="foto de perfil" width="300" height="300"></p>
+            <img src="imagens/perfil.jpeg" alt="foto de perfil" width="300" height="300">
+        </p>
         <h2>INFORMAÇÕES BÁSICAS:<br></h2>
         <p>
             Nome: Amanda Quirino Rodrigues Dos Santos<br>
@@ -35,22 +37,20 @@
     <!--Id para poder fazer a configuracao para ir ao topo da pagina clicando na seta-->
     <div id="topo">
         <a href="#centro">
-            <img src="imagens/seta.png" alt="Voltar ao topo"><br>  
+            <img src="imagens/seta2.png" alt="Voltar ao topo"><br>  
         </a>
         <!--Explicando ao usuario o objetivo da seta-->
-        <strong>VOLTAR AO TOPO</strong>
     </div>
     <hr>
 
     
-
     <!--Dizendo se eu tenho algum diploma-->
     <!--Pondo uma classe para poder modificar com css depois-->
     <p class="esquerda">
         Diplomas:
         <!--Criando botao para mostrar as informacoes-->
-        <button type="button" onclick="document.getElementById('diplomas').style.display='block'">
-            Clique aqui para ver!
+        <button type="button" onclick="handleDiplomasDescription()">
+            <img src="./imagens/icons/mostrar.png" alt="show icon">
         </button>
     </p>
 
@@ -58,8 +58,8 @@
     <p class="direita" id="diplomas">
         - Nenhum, atualmente no processo de conseguir um diploma em Ciências da Computação<br>
         <!--Criando botao para esconder as informacoes-->
-        <button type="button" onclick="document.getElementById('diplomas').style.display='none'">
-            Clique aqui para esconder!
+        <button type="button" onclick="handleHideDiplomas()">
+            <img src="./imagens/icons/esconder.png" alt="hide icon">
         </button>
     </p>
 
@@ -68,8 +68,8 @@
     <p class="esquerda">
         Linguagens de programação aprendidas:
         <!--Criando botao para mostrar as informacoes-->
-        <button type="button" onclick="document.getElementById('linguagens').style.display='block'">
-            Clique aqui para ver!
+        <button type="button" onclick="handleLinguagensDescription()">
+            <img src="./imagens/icons/mostrar.png" alt="show icon">
         </button>
     </p>
 
@@ -78,8 +78,8 @@
         -C<br>
         -Aprendizado de Python em progresso<br>
         <!--Criando botao para esconder as informacoes-->
-        <button type="button" onclick="document.getElementById('linguagens').style.display='none'">
-            Clique aqui para esconder!
+        <button type="button" onclick="handleHideLinguagens()">
+            <img src="./imagens/icons/esconder.png" alt="hide icon">
         </button>
     </p>
 
@@ -88,8 +88,8 @@
     <p class="esquerda">
         Interesses:
         <!--Criando botao para mostrar as informacoes-->
-        <button type="button" onclick="document.getElementById('interesses').style.display='block'">
-            Clique aqui para ver!
+        <button type="button" onclick="handleInteressessDescription()">
+            <img src="./imagens/icons/mostrar.png" alt="show icon">
         </button>
     </p>
 
@@ -100,8 +100,8 @@
         -Programar<br>
         -Xingar o programa que fiz<br>
         <!--Criando botao para esconder as informacoes-->
-        <button type="button" onclick="document.getElementById('interesses').style.display='none'">
-            Clique aqui para esconder!
+        <button type="button" onclick="handleHideInteresses()">
+            <img src="./imagens/icons/esconder.png" alt="hide icon">
         </button>
     </p>
 
@@ -114,8 +114,8 @@
     <p class = "esquerda">
         - Curiosidade 1
         <!--Criando botao para mostrar as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade1').style.display='block'">
-            Clique aqui para ver!
+        <button type="button" onclick="handleCuriosidades1Description()">
+            <img src="./imagens/icons/mostrar.png" alt="show icon">
         </button>
     </p>
 
@@ -125,8 +125,8 @@
         <!--Pondo uma foto-->
         <img src="imagens/Mimi.jpeg" alt="Foto de Mimi" width="200" height="400"><br>
         <!--Criando botao para esconder as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade1').style.display='none'">
-            Clique aqui para esconder!
+        <button type="button" onclick="handleHideCuriosidades1()">
+            <img src="./imagens/icons/esconder.png" alt="hide icon">
         </button>
     </p>
 
@@ -134,8 +134,8 @@
     <p class="esquerda">
         - Curiosidade 2
         <!--Criando botao para mostrar as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade2').style.display='block'">
-            Clique aqui para ver!
+        <button type="button" onclick="handleCuriosidades2Description()">
+            <img src="./imagens/icons/mostrar.png" alt="show icon">
         </button>
     </p>
 
@@ -145,8 +145,8 @@
         <!--Pondo outra foto-->
         <img src="imagens/orquidea.jpeg" alt="foto da orquidea" width="300" height="300"><br>
         <!--Criando botao para esconder as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade2').style.display='none'">
-            Clique aqui para esconder!
+        <button type="button" onclick="handleHideCuriosidades2()">
+            <img src="./imagens/icons/esconder.png" alt="hide icon">
         </button>
     </p>
 
@@ -154,8 +154,8 @@
     <p class="esquerda">
         - Curiosidade 3
         <!--Criando botao para mostrar as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade3').style.display='block'"
-        >Clique aqui para ver!
+        <button type="button" onclick="handleCuriosidades3Description()"
+        ><img src="./imagens/icons/mostrar.png" alt="show icon">
     </button>
     </p>
 
@@ -165,8 +165,8 @@
         <!--Pondo uma terceira foto-->
         <img src="imagens/minipalmeira.jpeg" alt="foto da mini palmeira" width="300" height="300"><br>
         <!--Criando botao para esconder as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade3').style.display='none'">
-            Clique aqui para esconder!
+        <button type="button" onclick="handleHideCuriosidades3()">
+            <img src="./imagens/icons/esconder.png" alt="hide icon">
         </button>
     </p>
 
@@ -174,8 +174,8 @@
     <p class="esquerda">
         - Curiosidade 4
         <!--Criando botao para mostrar as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade4').style.display='block'">
-            Clique aqui para ver!
+        <button type="button" onclick="handleCuriosidades4Description()">
+            <img src="./imagens/icons/mostrar.png" alt="show icon">
         </button>
     </p>
 
@@ -185,8 +185,8 @@
         <!--A vida eh feita de fotos, portanto botamos outra foto-->
         <img src="imagens/aquela_planta.jpeg" alt="foto da planta sem nome" width="200" height="300"><br>
         <!--Criando botao para esconder as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade4').style.display='none'">
-            Clique aqui para esconder!
+        <button type="button" onclick="handleHideCuriosidades4()">
+            <img src="./imagens/icons/esconder.png" alt="hide icon">
         </button>
     </p>
     
@@ -194,19 +194,19 @@
     <p class="esquerda">
         - Curiosidade 5
         <!--Criando botao para mostrar as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade5').style.display='block'">
-            Clique aqui para ver!
+        <button type="button" onclick="handleCuriosidades5Description()">
+            <img src="./imagens/icons/mostrar.png" alt="show icon">
         </button>
     </p>
 
-    <!--Classe e idpara o css depois-->
+    <!--Classe e id para o css depois-->
     <p class="direita" id="curiosidade5">
         <br>-Ensinei Mimi a dar a pata em troca de folha<br>
         <!--Dessa vez botamos um gif, e nao uma foto-->
         <img src="imagens/dandopata.gif" alt="video de mimi dando a pata"><br>
         <!--Criando botao para esconder as informacoes-->
-        <button type="button" onclick="document.getElementById('curiosidade5').style.display='none'">
-            Clique aqui para esconder!
+        <button type="button" onclick="handleHideCuriosidades5()">
+            <img src="./imagens/icons/esconder.png" alt="hide icon">
         </button>
     </p>
 </body>

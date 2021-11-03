@@ -4,9 +4,12 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /*Estabelecendo a aparencia do body da pagina*/
 body {
-    opacity: 1;
     font-family:Zen Antique Soft;
     /*Dizendo que deve haver uma animacao chamada fundo de 20 segundos em loop*/
     animation: fundo 20s; 
@@ -20,33 +23,24 @@ body {
     /*Dizendo que a posicao eh fixa na pagina, ou seja, a seta vai aparecer nao imponta em qual parte da pag o usuario esta*/
     position:fixed;
     /*Dizendo que a seta vai ficar no topo e na direita*/
-    top:0;
+    bottom: 10px;
     right: 0;
     /*Dizendo que ao passar o mouse em cima da seta eh possivel clicar nela*/
     cursor: pointer;
-    /*Fazendo com que a seta e o texto se adequem ao tamanho da pagina*/
-    max-width: 100%;
-    height: auto;
-    /*A seta fica 0+20px da direita e do topo*/
-    padding: 20px;
+    background-color: transparent;
 }
 
 /*Estabelecendo a aparencia dos retangulos do id centro e das classes direita e esquerda*/
 #centro,.direita,.esquerda {
     border: 2px solid black;
     border-radius: 8px;
-    padding: 10px;
 }
 
 /*Estabelecendo a aparencia em comum das classes esquerda e direita*/
 .esquerda,.direita {
     background-color: whitesmoke;
-    margin: 10px;
-}
-
-/*Estabelecendo a aparencia da classe direita*/
-.direita {
-    display: none;
+    margin: 20px;
+    padding: 10px;
 }
 
 /*Estabelecendo a aparencia do id centro*/
@@ -79,6 +73,14 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 10%;
+}
+
+/*Modificando a imagem dos botoes*/
+button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 /*Modificando a aparencia da imagem dentro do id centro para ser arredondada*/
@@ -93,13 +95,7 @@ img {
     background-image: url("imagens/background_direita.jpeg");
 }
 
-/*Pondo uma imagem no background da classe esquerda e ajeitando a posicao do texto*/
 .esquerda {
-    text-align: left;
-    background-image: url("imagens/background_esquerda.jpeg");
-}
-
-/* Modificando a aparencia dos links nao clicados*/
-a:link {
-    color: palevioletred;
+    text-align: left;		
+	    background-image: url("imagens/background_esquerda.jpeg");
 }
