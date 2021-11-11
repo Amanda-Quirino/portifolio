@@ -55,10 +55,10 @@ body {
 /*Criando a animacao centroback*/
 @keyframes centroback {
     /*Entre 0% a 50% do tempo da animacao havera a troca entre 2 imagems*/
-    0% {background-image: url("imagens/background_direita.jpeg");}
-    50% {background-image: url("imagens/background_esquerda.jpeg");}
+    0% {background-image: url("imagens/background/background_direita.jpeg");}
+    50% {background-image: url("imagens/background/background_esquerda.jpeg");}
     /*Entre 50% e 100% a imagem que tava no inicio ira voltar gradualmente*/
-    100% {background-image: url("imagens/background_direita.jpeg");}
+    100% {background-image: url("imagens/background/background_direita.jpeg");}
 }
 
 /*Criando a animacao fundo*/
@@ -92,10 +92,10 @@ button {
 /*Pondo uma imagem no background da classe direita e ajeitando a posicao do texto*/
 .direita {
     text-align: right;
-    background-image: url("imagens/background_direita.jpeg");
+    background-image: url("imagens/background/background_direita.jpeg");
 }
 
 .esquerda {
     text-align: left;		
-	    background-image: url("imagens/background_esquerda.jpeg");
+	    background-image: url("imagens/background/background_esquerda.jpeg");
 }
